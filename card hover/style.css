@@ -1,0 +1,97 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main container styles */
+
+body {
+  background-image: linear-gradient(
+    to right,
+    rgb(231, 76, 187) 0%,
+    rgb(225, 225, 73) 50%,
+    rgb(64, 232, 64) 75%,
+    rgb(237, 139, 58) 100%
+  );
+  font-family: sans-serif;
+}
+
+h1 {
+  color: crimson;
+  display: inline-block;
+  margin-left: 27rem;
+  font-family: cursive;
+}
+.main-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+
+/* Card styles */
+.card {
+  width: 250px;
+  height: 200px;
+  border: 2px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+/* Hover effects */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Checkbox container styles */
+.checkbox-container {
+  margin-bottom: -140px;
+  text-align: center;
+}
+
+/* Message container styles */
+.message-container {
+  /* margin-top: 20px; */
+  text-align: center;
+}
+
+/* Paragraph styles */
+#message {
+  font-size: 18px;
+  color: green;
+}
+/* Main container styles */
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  h1 {
+    margin-left: 0;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 27px;
+    margin-top: 10px;
+  } 
+  .checkbox-container {
+    margin-bottom: -50px;
+    text-align: center;
+  }
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  }
+}
